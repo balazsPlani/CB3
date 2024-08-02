@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=960 height=540 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -57,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/FeedbackFridayDecompress.loader.js";
+      var loaderUrl = buildUrl + "/FeedbackFridayCool.loader.js";
       var config = {
-        dataUrl: buildUrl + "/FeedbackFridayDecompress.data.unityweb",
-        frameworkUrl: buildUrl + "/FeedbackFridayDecompress.framework.js.unityweb",
-        codeUrl: buildUrl + "/FeedbackFridayDecompress.wasm.unityweb",
+        dataUrl: buildUrl + "/FeedbackFridayCool.data.unityweb",
+        frameworkUrl: buildUrl + "/FeedbackFridayCool.framework.js.unityweb",
+        codeUrl: buildUrl + "/FeedbackFridayCool.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "BalzsamGames",
         productName: "Card space",
@@ -95,7 +95,7 @@
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
         canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.height = "540px";
       }
 
       loadingBar.style.display = "block";
